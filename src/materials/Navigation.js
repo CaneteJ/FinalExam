@@ -13,7 +13,7 @@ function Navigation () {
       <a class="nav-item nav-link active" href="Hompage">Home </a>
       <a class="nav-item nav-link" href="Login">Login</a>
       <a class="nav-item nav-link" href="Registration">Registration</a>
-      <a class="nav-item nav-link disabled" href="#">About Us</a>
+      <a class="nav-item nav-link" href="About">About Us</a>
     </div>
   </div>
 </nav>
