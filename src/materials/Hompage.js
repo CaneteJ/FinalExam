@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Homepage() {
+function getStart() {
   const jobListings = [
     {
       title: 'Customer Support Representative',
@@ -85,4 +85,4 @@ function Homepage() {
   );
 }
 
-export default Homepage;
+export default getStart;

@@ -1,30 +1,43 @@
 import React from 'react';
 
 const aboutStyles = {
-  maxWidth: '800px',
-  margin: '0 auto',
-  padding: '30px',
-  fontFamily: 'Arial, sans-serif',
-  background: '#f8f8f8',
-  boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
-  borderRadius: '5px',
+    maxWidth: '800px',
+    margin: '0 auto',
+    padding: '30px',
+    fontFamily: 'Arial, sans-serif',
+    background: 'rgba(248, 248, 248, 0.8)',
+    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+    borderRadius: '5px',
+    color: '#000000',
+};
+
+const bodyStyle = {
+  backgroundImage: 'url("https://images.squarespace-cdn.com/content/v1/5d3a161fab57400001d7bc50/1566961488699-3NGTBDMS69OH5X9I11AE/Sabo.jpg")',
+  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat',
+  backgroundAttachment: 'fixed',
+  height: '100vh',
+  
+
 };
 
 const headingStyles = {
   fontSize: '24px',
   marginBottom: '20px',
-  color: '#333',
+  fontSize: '50px',
 };
 
 const paragraphStyles = {
-  fontSize: '16px',
-  marginBottom: '10px',
-  color: '#555',
+  fontSize: '20px',
+  marginBottom: '30px',
+  margin: '20px'
 };
 
 function About() {
   return (
+    <div style={bodyStyle}>
     <div style={aboutStyles}>
+   
       <h2 style={headingStyles}>About Us</h2>
       <p style={paragraphStyles}>
         At Single Moms Job Assistance, our mission is to provide support and resources to single moms who are seeking employment opportunities. We understand the unique challenges faced by single mothers in the job market, and we are here to help bridge the gap and empower them to achieve financial independence.
@@ -38,6 +51,7 @@ function About() {
       <p style={paragraphStyles}>
         We believe that every single mom deserves the opportunity to build a successful career and provide a better future for themselves and their children. Through our comprehensive job assistance programs, we strive to make a positive impact and empower single moms to achieve their professional goals.
       </p>
+    </div>
     </div>
   );
 }

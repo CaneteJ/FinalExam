@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 
+
 class Registration extends React.Component {
   state = {
     name: '',
@@ -44,12 +45,18 @@ class Registration extends React.Component {
       justifyContent: 'center',
       height: '100vh',
       fontFamily: 'Arial, sans-serif',
+      backgroundColor: '#f5f5f5',
+      backgroundImage: 'url("https://images.squarespace-cdn.com/content/v1/5d3a161fab57400001d7bc50/1566961488699-3NGTBDMS69OH5X9I11AE/Sabo.jpg")',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      backgroundAttachment: 'fixed',
+      height: '100vh',
     };
-
     const headingStyle = {
-      fontSize: '2rem',
+      fontSize: '3rem',
       marginBottom: '2rem',
-      color: '#333',
+      color: '#FFFFFF',
+      fontWeight: 'bold',
     };
 
     const formContainerStyle = {
@@ -57,6 +64,7 @@ class Registration extends React.Component {
       padding: '2rem',
       borderRadius: '5px',
       boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+      background: 'rgba(248, 248, 248, 0.8)',
     };
 
     const inputStyle = {
@@ -79,8 +87,9 @@ class Registration extends React.Component {
     };
 
     return (
+    
       <div style={containerStyle}>
-        <h1 style={headingStyle}>Welcome to My Landing Page</h1>
+        <h1 style={headingStyle}>Become one with S.P S.P Job Finder</h1>
         <div style={formContainerStyle}>
           <h2>Sign Up</h2>
           <form onSubmit={this.handleSignUp}>
